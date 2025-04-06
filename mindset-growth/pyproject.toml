@@ -5,3 +5,15 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []
+
+[tool.poetry]
+name = "mindset-growth"
+version = "0.1.0"
+description = "File Converter and Cleaner Streamlit App"
+authors = ["zarmain ahmed "]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+streamlit = "^1.24.0"
+pandas = "^2.0.0"
+openpyxl = "^3.0.0"
