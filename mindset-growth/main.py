@@ -1,4 +1,3 @@
-
 import streamlit as st 
 import pandas as pd 
 import os
@@ -45,7 +44,11 @@ if upload_files:
                     st.write("Missing Values have been filled successfully")
                     
         st.subheader("Select Columns")
-        columns = st.multiselect(f"Select Columns for {file.name}", df.columns, default=df.columns)
+        columns = st.multiselect(
+            f"Select Columns for {file.name}",
+            options=list(df.columns),
+            default=list(df.columns)
+        )
         df = df[columns]
         
         # Data visualization
