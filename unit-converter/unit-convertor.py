@@ -2,10 +2,10 @@ import streamlit as st
 
 def convert_units(value, unit_from, unit_to):
     conversions = {
-        "meters_kilometers": 0.001, # 1 meter = 0.001 kilometers
-        "kilometers_meters": 1000,  # 1 kilometer = 1000 meters
-        "grams_kilograms": 0.001,   # 1 gram = 0.001 kilograms
-        "kilograms_grams": 1000,      # 1 kilogram = 1000 grams
+        "meters_kilometers": 0.001, 
+        "kilometers_meters": 1000,  
+        "grams_kilograms": 0.001,   
+        "kilograms_grams": 1000,     
     }
 
     key = f"{unit_from}_{unit_to}" 
